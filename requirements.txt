@@ -1,5 +1,5 @@
 streamlit
-option_menu
+streamlit-option-menu
 os
 json
 tempfile
