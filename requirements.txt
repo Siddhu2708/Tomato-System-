@@ -10,3 +10,6 @@ FPDF
 Groq
 io
 json
+smtplib
+MIMEMultipart
+MIMEText
