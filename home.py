@@ -57,7 +57,7 @@ def Home():
 
     # Function to preprocess image
     def preprocess_image(img) :
-        img = img.resize ( (256, 256) )  # Assuming the model expects 224x224 images
+        img = img.resize ( (128, 128) )  # Assuming the model expects 224x224 images
         img_array = np.array ( img )
         img_array = np.expand_dims ( img_array, axis=0 )  # Add batch dimension
         img_array = img_array / 255.0  # Normalize pixel values
