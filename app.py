@@ -11,7 +11,7 @@ st.set_page_config(page_title="Tomato System", page_icon="🍅", layout="wide")
 # Navigation Menu
 select = option_menu(
     menu_title='',
-    options=['Home', 'Planty AI', 'Shop', 'Contact'],
+    options=['Home', 'Planty', 'Shop', 'Contact'],
     icons=['house', 'robot', 'shop', 'envelope'],
     menu_icon='cast',
     default_index=0,
@@ -29,7 +29,7 @@ if select == 'Home':
     Home()
 
 # Planty AI Page
-elif select == 'Planty AI':
+elif select == 'Planty':
     Planty()
 
 # Shop Page
