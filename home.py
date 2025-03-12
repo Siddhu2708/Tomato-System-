@@ -21,31 +21,6 @@ def Home():
     """)
 
     st.markdown("---")
-    st.header("🌟 Special Offer for Tomato Lovers!")
-    col1, col2 = st.columns([2, 1])
-    with col1:
-        st.subheader("Buy Premium Tomato Seeds Now!")
-        st.write("""
-            - High yield and disease resistance.
-            - Suitable for all climates.
-            - Special 20% discount for a limited time!
-        """)
-        st.write("""
-            🌟 Why choose our seeds?
-            - Tested and trusted by farmers worldwide.
-            - Supports sustainable and organic farming practices.
-            - Guaranteed freshness and germination rates.
-        """)
-        st.write("### 👉 Visit Our Shop")
-        # if st.button("👉 Visit Our Shop"):
-        #     st.write("Redirecting to shop...")
-        #     shop_url = "http://localhost:8501/shop"
-
-    with col2:
-        ad_image = "./image/tomato_seeds.png"  # Replace with your ad image path
-        st.image(ad_image, caption="Premium Tomato Seeds", use_container_width=True)
-
-    st.markdown("---")
 
     # Load the pre-trained model
     model = tf.keras.models.load_model('tomato_disease_model.h5')
@@ -182,3 +157,31 @@ def Home():
             st.error(f"Error: {e}")
     else:
         st.write("Please upload an image for diagnosis.")
+
+    st.markdown("---")
+    st.header("🌟 Special Offer for Tomato Lovers!")
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        st.subheader("Buy Premium Tomato Seeds Now!")
+        st.write("""
+            - High yield and disease resistance.
+            - Suitable for all climates.
+            - Special 20% discount for a limited time!
+        """)
+        st.write("""
+            🌟 Why choose our seeds?
+            - Tested and trusted by farmers worldwide.
+            - Supports sustainable and organic farming practices.
+            - Guaranteed freshness and germination rates.
+        """)
+        st.write("### 👉 Visit Our Shop")
+        # if st.button("👉 Visit Our Shop"):
+        #     st.write("Redirecting to shop...")
+        #     shop_url = "http://localhost:8501/shop"
+
+    with col2:
+        ad_image = "./image/tomato_seeds.png"  # Replace with your ad image path
+        st.image(ad_image, caption="Premium Tomato Seeds", use_container_width=True)
+
+     st.markdown("---")
+
