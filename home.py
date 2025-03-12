@@ -11,7 +11,7 @@ import io
 
 def Home():
     # Home Section
-    st.title("🌱 Welcome to Tomato System!")
+    st.title("🌱 Welcome to Tomato Detection System!")
     st.subheader("Your ultimate companion for tomato planting, care, and disease management.")
     st.write("""
         Use the Tomato System to:
