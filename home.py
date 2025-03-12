@@ -182,6 +182,5 @@ def Home():
     with col2:
         ad_image = "./image/tomato_seeds.png"  # Replace with your ad image path
         st.image(ad_image, caption="Premium Tomato Seeds", use_container_width=True)
-
-     st.markdown("---")
+        st.markdown("---")
 
