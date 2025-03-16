@@ -18,19 +18,19 @@ lang_code = languages[selected_lang]
 translations = {
     "en": {
         "home": "Home",
-        "planty_ai": "Planty AI",
+        "planty_ai": "Planty",
         "shop": "Shop",
         "contact": "Contact"
     },
     "hi": {
         "home": "मुख्यपृष्ठ",
-        "planty_ai": "प्लांटी एआई",
+        "planty_ai": "प्लांटी",
         "shop": "दुकान",
         "contact": "संपर्क"
     },
     "mr": {
         "home": "मुख्यपृष्ठ",
-        "planty_ai": "प्लांटी एआय",
+        "planty_ai": "प्लांटी",
         "shop": "दुकान",
         "contact": "संपर्क"
     }
