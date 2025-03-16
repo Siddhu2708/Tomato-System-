@@ -224,7 +224,7 @@ def Home(lang_code):
 
     # Function to preprocess image
     def preprocess_image(img) :
-        img = img.resize ( (256, 256) )
+        img = img.resize ( (128, 128) )
         img_array = np.array ( img )
         img_array = np.expand_dims ( img_array, axis=0 )
         img_array = img_array / 255.0
