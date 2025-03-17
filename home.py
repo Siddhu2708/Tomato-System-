@@ -223,13 +223,9 @@ def Home(lang_code):
     st.write ( t["features"] )
 
     st.markdown("---")
-
-    @st.cache_resource
-    def load_model() :
-        return tf.keras.models.load_model ( 'best_tomato_model.h5' )
-
-    model = load_model ()
-
+    
+    model = tf.keras.models.load_model('tomato_disease_model.h5')
+    
     # Classes for diseases
     classes = ['Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'No_tomato_leaf', 'Septoria_leaf_spot',
                'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_Yellow_Leaf_Curl_Virus',
@@ -237,7 +233,7 @@ def Home(lang_code):
 
     # Function to preprocess image
     def preprocess_image(img) :
-        img = img.resize ( (256, 256) )
+        img = img.resize ( (128, 128) )
         img_array = np.array ( img )
         img_array = np.expand_dims ( img_array, axis=0 )
         img_array = img_array / 255.0
