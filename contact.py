@@ -17,6 +17,7 @@ def send_sms(name, email, phone, message) :
             f"👤 Name: {name}\n"
             f"📧 Email: {email}\n"
             f"📞 Phone: {phone}\n"
+            f"🏡 Address: {address}\n"
             f"🌾 Message: {message}"
         )
 
